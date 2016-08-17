@@ -1843,7 +1843,7 @@ public class MHRProcess extends X_HR_Process implements DocAction
 		if (concept == null)
 			return BigDecimal.ZERO;
 
-		ArrayList<Object> params = new ArrayList<>();
+		ArrayList<Object> params = new ArrayList();
 		StringBuffer whereClause = new StringBuffer();
 		// check ValidFrom:
 		whereClause.append(MHRAttribute.COLUMNNAME_ValidFrom).append("<=?");
